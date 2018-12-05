@@ -1,0 +1,405 @@
+body{
+	margin: 0;	
+	font-family: 'Montserrat', sans-serif;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+.container{
+	width: 100%;
+	max-width:1200px;
+	margin: 0 auto;
+}
+
+.row::before,
+.row::after {
+	content:"";
+	display: table ;
+	clear: both;
+}
+
+[class*='col-'] {
+	float: left;
+	min-height: 1px;
+}
+
+[class*='tag'] {
+	height: 310px;
+	padding: 20px;
+	color: white;
+	background-size: cover;
+	background-position: center;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.col-offset-0 {margin-left: 0;}
+.col-offset-1 {margin-left: 8.33%;}
+.col-offset-2 {margin-left: 16.66%;}
+.col-offset-3 {margin-left: 25%;}
+.col-offset-4 {margin-left: 33.33%;}
+.col-offset-5 {margin-left: 41.66%;}
+.col-offset-6 {margin-left: 50%;}
+.col-offset-7 {margin-left: 58.33%;}
+.col-offset-8 {margin-left: 66.66%;}
+.col-offset-9 {margin-left: 75%;}
+.col-offset-10 {margin-left: 83.33%;}
+.col-offset-11 {margin-left: 91.66%;}
+
+.hero{
+	width: 100%;
+	height: 70vh;
+	background-image: url("http://kimbo007.vdl.pl/Dlaambitnych1/header.jpg");
+	background-size: cover;
+	background-position: center;
+	overflow: hidden;
+	font-family: 'Montserrat', sans-serif;
+}
+
+
+.hero > nav{
+    font-size: 14px;
+}
+
+
+.hero > nav ul{
+	margin: auto;
+	padding: 0;
+	list-style-type: none;
+	float: right;
+	vertical-align: middle;
+}
+
+.clearfix{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.hero > nav ul > li{
+	display: inline-block;
+	margin: 0 10px;
+}
+
+.hero > nav ul > li > a {
+  line-height: 50px;
+  color: white;
+  display: block;
+  padding: 0 20px;
+  text-decoration: none;
+}
+
+.hero > nav ul > li > a:hover {
+    background: white;
+    color:#00C6E9;
+}
+
+.logo{
+    max-width: 150px;
+}
+
+.phone img{
+    width: 100%;
+    bottom: 20vh;
+    object-fit: contain;
+    position: absolute;  
+    max-width: 30%;
+    max-height: 70vh;
+}
+
+.slogan{
+    margin-top: 20vh;
+	padding: 30px;
+	color: white;
+}
+
+.slogan h4,
+.slogan h2{
+    font-weight: normal;   
+}
+
+.spacer{
+    padding: 16px;
+	margin: 20px 0 20px 16px;
+    color: #959595;
+}
+
+.spacer > .lower{
+    margin-top: 100px; 
+    padding: 16px;
+}
+
+.tag1{
+    background: #f5989d;
+}
+
+.tag2{
+    background: #615f7d;
+}
+
+.tag3{
+    background-image: url("https://images.unsplash.com/photo-1543589076-bddcb054f426?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=965db6caf9ba7dfa651c0dcb27952683&auto=format&fit=crop&w=1834&q=80");
+}
+
+.tag4{
+    background: #bd8cbf;
+  }
+
+.tag5{
+    background-image: url("https://images.unsplash.com/photo-1543539858-13ca58d04478?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b439db0725c3c7c83b13249b68b8c384&auto=format&fit=crop&w=1267&q=80");
+    text-decoration: none;
+}
+
+.tag6{
+    background: #82ca9c;
+  }
+
+.tag7{
+    background-image: url("http://kimbo007.vdl.pl/Dlaambitnych1/header.jpg");
+    text-decoration: none;
+}
+
+.tag1 a,
+.tag2 a,.tag3 a,.tag4 a,.tag5 a,.tag6 a,.tag7 a{
+    text-decoration: none;
+    color: white;
+}
+
+
+.icon-btn{
+	height: 100px;
+	width: 100px;
+	border-width: 0;
+	border-color: #FFFFFF;
+	border-radius: 20%;
+	margin: 0 auto;
+	font-size:40px;
+	color: white;
+	transition: all .4s ease-in-out;
+}
+
+.icon{
+	background: #313332;	
+}
+
+.icoDiv:hover .icon{
+	background: #00C6E9;
+	color: white;
+	transform: scale(1.20);
+}
+
+.icoDiv:hover h4{
+	color: #00C6E9;
+}
+
+.gallery{
+	text-align: center;
+	width: 100%;
+	height: 150px;
+}
+
+.gallery img {
+	float: left;
+	width: 100%;
+	height: 150px;
+	object-fit: cover;
+}
+
+.gallery .layer {
+	top: -150px;
+	background: rgba(0,0,0, 0.5);
+	width: 100%;
+	position: absolute;
+	height: 150px;
+}
+
+
+.gallery .layer .fa {
+	position: relative;
+	padding: 10px;
+	margin-left: 5px;
+	background: white;
+	color: black;
+	border-radius: 5px;
+	top: 60px;
+}
+
+.relate{
+	position: relative;
+	overflow:hidden;
+}
+
+.relate:hover .layer{
+	position: absolute;	
+	top: 0;
+	cursor: pointer;
+	transition: .5s ease;
+}
+//
+.team{
+	position: absolute;
+	text-align: center;
+}
+
+.employee{
+	position: relative;
+	width: 200px;
+	height: 200px;
+	text-align: center;
+	color: white;
+	border-radius: 50%;
+	border-width: 0;
+	border-width:0;
+	border-color: white;
+	background: #00C6E9;
+	margin: 0 auto;
+	overflow:hidden;
+}
+
+.avatar{
+	position: relative;
+	display: inline-block;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	top: -51px;
+	object-fit: cover;
+	opacity: 1;
+}
+
+.avatar:hover{
+	opacity: 0.1;
+	transition: .5s ease;
+}
+
+.employee p{
+	position: relative;
+	top: 75px;
+	color: white;
+}
+
+.PhoneSection{
+	width: 100%;
+	background: url("https://images.unsplash.com/photo-1520531158340-44015069e78e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e8e1834e861a1f2eefcc8cc3622af6c9&auto=format&fit=crop&w=1738&q=80");
+	background-position: center; 
+	background-repeat: no-repeat; 
+	background-size: cover;
+	overflow: hidden;
+}
+
+.bgs{
+	width: 100%;
+	height: 100%;
+	padding: 10px 0 0 0;
+	background: rgba(0,0,0, .4);
+	color:white;
+	text-align: left;
+}
+
+.padder{
+	padding: 0 16px;
+}
+
+.padder i{
+	font-size: 12px;	
+}
+
+.PhoneSection .phone img{
+	width:100%;
+	margin-bottom: -50%;
+	object-fit: cover;
+	overflow: hidden;
+}
+
+.numbers h2{
+	font-family: 'Notable', sans-serif;
+	font-size: 40px;
+	font-weight: bold;
+	color: #313332;
+	margin: 0 auto;
+}
+
+.numbers h4{
+	font-size: 13px;
+	color: #00C6E9;
+	margin: 0 auto;
+}
+
+.footer{
+	margin-top: 50px;
+	background: #313332;
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.padder2{
+	padding: 16px;	
+}
+
+.footer h2{
+	color: white;
+	display: inline-block;
+}
+
+.footer hr{
+	display:inline-block;
+	width: 50px;
+	margin-left: 10px;
+}
+
+.footer p{
+	margin: 0;	
+	color: white;
+	font-size: 12px;
+}
+
+.social-icon{
+	height: 30px;
+	width: 30px;
+	margin: 10px 5px 0 0;
+	border-width: 0;
+	cursor: pointer;
+	font-size:14px;
+	background: #00C7E8;
+	color: white;
+}
+
+.icon_small{
+	width: 40px;
+	justify-content: center;
+	display: flex;
+	margin-top: 5px;
+	margin-right: 10px;
+	margin-bottom: 1rem;
+}
+
+.contact_info li{
+	text-decoration: none;
+	list-style: none;
+	display: flex;
+	vertical-align:middle;
+	font-size: 12px;
+}
+
+.copyrigts{
+	line-height: 40px;
+	background: #252726;
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 12px;
+	text-align:center;
+}
+
